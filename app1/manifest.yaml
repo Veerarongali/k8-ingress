@@ -47,8 +47,8 @@ kind: Ingress
 metadata:
   name: app1
   annotations:
-    alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]'
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:905418337732:certificate/15948db5-49c0-4982-9358-1c4de02cd4a2
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 80}]'
+    #alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:905418337732:certificate/15948db5-49c0-4982-9358-1c4de02cd4a2
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/tags: Environment=dev,Project=roboshop
     alb.ingress.kubernetes.io/target-type: ip
