@@ -25,11 +25,10 @@ eksctl create iamserviceaccount \
 --cluster=roboshop-dev \
 --namespace=kube-system \
 --name=aws-load-balancer-controller \
---attach-policy-arn=arn:aws:iam::160885265516:policy/AWSLoadBalancerControllerIAMPolicy \
+--attach-policy-arn=arn:aws:iam::905418337732:policy/AWSLoadBalancerControllerIAMPolicy \
 --override-existing-serviceaccounts \
 --region us-east-1 \
 --approve
-```
 
 ### Install drivers
 
